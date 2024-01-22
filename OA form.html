@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Order Acceptance Form</title>
+</head>
+<title>Order Acceptance Form</title>
+<!--link rel="stylesheet" href="style.css"-->
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #239478;
+        margin: 0;
+        padding: 20px;
+    }
+
+    form {
+        background-color: #530c3e;
+    box-shadow: 0 0 10px rgba(15, 70, 58, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #943b12;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #1a5564;
+        border-radius: 4px;
+    }
+
+    button {
+        background-color: #153564;
+        color: rgb(42, 7, 63);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #9d45a0;
+    }
+</style>
+</head>
+<body>
+
+<form>
+    <h2>Order Acceptance Form</h2>
+
+   
+    <label for="Order No">Order Acceptance No:</label>
+    <input type="text" id="orderNo" name="orderNo" required>
+
+    <label for="Order Date">Order Acceptance Date:</label>
+    <input type="date" id="orderDate" name="orderDate" required>
+
+    
+    <label for="orderBranch">Order Branch:</label>
+    <input type="text" id="orderBranch" name="orderBranch" required>
+
+    <label for="orderType">Order Type:</label>
+    <input type="text" id="orderType" name="orderType" required>
+        
+
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required>
+
+        <label for="customerAddress1">Customer Address 1:</label>
+        <input type="text" id="customerAddress1" name="customerAddress1" required>
+
+        <label for="customerAddress2">Customer Address 2:</label>
+        <input type="text" id="customerAddress2" name="customerAddress2">
+
+        <label for="customerAddress3">Customer Address 3:</label>
+        <input type="text" id="customerAddress3" name="customerAddress3">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="pincode">Pincode/Zip:</label>
+        <input type="text" id="pincode" name="pincode" required>
+
+        <label for="purchaseOrderRef">Purchase Order Ref & Date:</label>
+        <input type="text" id="purchaseOrderRef" name="purchaseOrderRef" required>
+
+        <label for="poReceivedFormat">PO Received Format & Date:</label>
+        <input type="text" id="poReceivedFormat" name="poReceivedFormat" required>
+
+        <label for="purchaseOrderBasicValue">Purchase Order Basic Value:</label>
+        <input type="text" id="purchaseOrderBasicValue" name="purchaseOrderBasicValue" required>
+
+        <label for="taxesApplicableGstin">Taxes Applicable GSTIN:</label>
+        <input type="text" id="taxesApplicableGstin" name="taxesApplicableGstin" required>
+
+        <label for="totalPoValue">Total PO Value Inclusive of Taxes:</label>
+        <input type="text" id="totalPoValue" name="totalPoValue" required>
+
+        <label for="paymentTerms">Payment Terms:</label>
+        <input type="text" id="paymentTerms" name="paymentTerms" required>
+
+        <label for="poDescription">PO Description:</label>
+        <input type="text" id="poDescription" name="poDescription" required>
+
+        <label for="customerPanNo">Customer PAN No.:</label>
+        <input type="text" id="customerPanNo" name="customerPanNo" required>
+
+        <label for="customerGstin">Customer GSTIN:</label>
+        <input type="text" id="customerGstin" name="customerGstin" required>
+
+        <label for="contactPerson">Contact Person & Designation:</label>
+        <input type="text" id="contactPerson" name="contactPerson" required>
+
+        <label for="contactNumber">Contact No.:</label>
+        <input type="text" id="contactNumber" name="contactNumber" required>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Contract Details -->
+        <label for="contractTenure">Contract Tenure:</label>
+        <input type="text" id="contractTenure" name="contractTenure" required>
+
+        <label for="contractStartDate">Contract Start Date:</label>
+        <input type="date" id="contractStartDate" name="contractStartDate" required>
+
+        <label for="contractEndDate">Contract End Date:</label>
+        <input type="date" id="contractEndDate" name="contractEndDate" required>
+
+        <!-- Delivery Location -->
+        <label for="deliveryLocation">Delivery Location:</label>
+        <input type="text" id="deliveryLocation" name="deliveryLocation" required>
+
+        <!-- Billing Details -->
+        <label for="billingDetails">Billing Details and Address:</label>
+        <textarea id="billingDetails" name="billingDetails" rows="4" required></textarea>
+
+        <!-- Attach Documents -->
+        <label for="documentsToAttach">Documents To Attach:</label>
+        <input type="file" id="documentsToAttach" name="documentsToAttach" multiple>
+
+        <label for="billingAddress">Billing Address:</label>
+        <textarea id="billingAddress" name="billingAddress" rows="4" required></textarea>
+
+        <label for="gstinNo">GSTIN No.:</label>
+        <input type="text" id="gstinNo" name="gstinNo" required>
+
+        <!-- Cost Working Sheet -->
+        <label for="costWorkingSheet">Cost Working Sheet:</label>
+        <input type="file" id="costWorkingSheet" name="costWorkingSheet">
+
+        <!-- PROBOX Final Proposal Copy -->
+        <label for="proposalCopy">PROBOX Final Proposal Copy:</label>
+        <input type="file" id="proposalCopy" name="proposalCopy">
+
+        <!-- NDA Format -->
+        <label for="ndaFormat">NDA Format:</label>
+        <input type="file" id="ndaFormat" name="ndaFormat">
+
+        <!-- SLA or Contract Agreement -->
+        <label for="slaContractAgreement">SLA or Contract Agreement:</label>
+        <input type="file" id="slaContractAgreement" name="slaContractAgreement">
+
+        <!-- Customer RFQ -->
+        <label for="customerRFQ">Customer RFQ:</label>
+        <input type="file" id="customerRFQ" name="customerRFQ">
+
+        <!-- Deployment Team Structure and Size -->
+        <label for="teamStructure">Deployment Team Structure and Size:</label>
+        <textarea id="teamStructure" name="teamStructure" rows="4"></textarea>
+
+        <!-- Support Plan -->
+        <label for="supportPlan">Support Plan:</label>
+        <textarea id="supportPlan" name="supportPlan" rows="4"></textarea>
+
+        <!-- Areas to be Looked Into -->
+        <label for="areasToLookInto">Any Areas to be Looked Into:</label>
+        <textarea id="areasToLookInto" name="areasToLookInto" rows="4"></textarea>
+        
+    
+
+        <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+</html>
